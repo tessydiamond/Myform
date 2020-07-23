@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form.HTML</title>
+</head>
+
+<body>
+	<h1>HTML5 Forms</h1>
+	<form action="Registered_form.html">
+		<label>Username<span>*</span></label ><br>
+		<input type="text" name="username" placeholder="enter your username" required><br>
+
+		<label>Password<span>*</span></label><br>
+		<input type="password" name="password" placeholder="Enter your password" 
+		title="password must not be less than 8 characters, 1 uppercase, 1 lowercase, 1 digit" min="8" required 
+		pattern="(?=.*/d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
+
+		<button type="submit" name="submit">SUBMIT</button>
+</form>
+</body>
+</html>
